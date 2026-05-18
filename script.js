@@ -4,9 +4,11 @@ yearTargets.forEach((target) => {
 });
 
 const currentPage = document.body.dataset.page;
-document.querySelectorAll(".primary-nav a").forEach((link) => {
+const currentHref = currentPage === "home" ? "index.html" : `${currentPage}.html`;
+
+document.querySelectorAll(".primary-nav a, .footer-nav a").forEach((link) => {
   const href = link.getAttribute("href");
-  if (href === `${currentPage}.html`) {
+  if (href === currentHref) {
     link.classList.add("active");
   }
 });
