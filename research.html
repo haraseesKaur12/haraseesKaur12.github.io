@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research program of Harasees Kaur in high-performance and distributed computing.">
+  <title>Research | Harasees Kaur</title>
+  <script>
+    document.documentElement.classList.add("js-enabled");
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page" data-page="research">
+  <div class="paper-grid" aria-hidden="true"></div>
+
+  <header class="masthead shell">
+    <a class="wordmark" href="index.html">
+      <span class="monogram" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M10 32h16M38 32h16M26 32l6-8 6 8-6 8-6-8Z"/>
+          <circle cx="10" cy="32" r="4"/>
+          <circle cx="54" cy="32" r="4"/>
+        </svg>
+      </span>
+      <span>Harasees Kaur</span>
+    </a>
+
+    <div class="identity">
+      <span>PhD Scholar, Computer Science and Engineering</span>
+      <span>Indian Institute of Technology Ropar</span>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">CV</a>
+    </nav>
+  </header>
+
+  <main class="shell page-main">
+    <section class="page-intro reveal">
+      <p class="folio">02 / Research</p>
+      <h1>A research program centered on the cost of coordination.</h1>
+    </section>
+
+    <section class="thesis-band reveal">
+      <span>Central question</span>
+      <p>
+        When a computation is distributed across many machines, how can we reduce the work spent
+        communicating so that more of the system is devoted to useful progress?
+      </p>
+    </section>
+
+    <section class="program-grid">
+      <article class="program-item reveal">
+        <div class="line-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M6 10h20M6 22h20M10 6v20M22 6v20"/>
+          </svg>
+        </div>
+        <h2>Collective communication</h2>
+        <p>
+          Understanding MPI collectives as first-order performance objects rather than background
+          operations, with attention to synchronization, data movement, and scalability.
+        </p>
+      </article>
+
+      <article class="program-item reveal">
+        <div class="line-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M6 25 12 17l5 4 9-14"/>
+            <path d="M20 7h6v6"/>
+          </svg>
+        </div>
+        <h2>Performance modeling</h2>
+        <p>
+          Building communication-aware models and trace-driven simulations that reveal where
+          distributed execution loses time before those losses harden into design decisions.
+        </p>
+      </article>
+
+      <article class="program-item reveal">
+        <div class="line-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <circle cx="8" cy="16" r="4"/>
+            <circle cx="24" cy="9" r="4"/>
+            <circle cx="24" cy="23" r="4"/>
+            <path d="M11 14l9-4M11 18l9 4"/>
+          </svg>
+        </div>
+        <h2>Distributed coordination</h2>
+        <p>
+          Studying how large systems organize work, how communication patterns form, and how
+          topology-aware decisions can reduce avoidable overhead.
+        </p>
+      </article>
+
+      <article class="program-item reveal">
+        <div class="line-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 5v22M5 16h22"/>
+            <circle cx="16" cy="16" r="10"/>
+          </svg>
+        </div>
+        <h2>Future workloads</h2>
+        <p>
+          Extending communication-centric reasoning toward heterogeneous systems, distributed AI,
+          data-parallel training, and the next generation of scalable computing platforms.
+        </p>
+      </article>
+    </section>
+
+    <section class="lattice-sheet reveal" aria-label="Communication latency diagram">
+      <div>
+        <p class="folio">Animated study</p>
+        <h2>Communication fabric</h2>
+        <p>
+          The diagram models a system in which multiple ranks exchange work. The moving signals are
+          intentionally sparse: the objective is not motion for spectacle, but motion that explains
+          the research problem.
+        </p>
+      </div>
+
+      <svg class="lattice" viewBox="0 0 760 300" role="img" aria-label="Distributed ranks exchanging signals across a lattice">
+        <defs>
+          <linearGradient id="pulseStroke" x1="0" x2="1">
+            <stop offset="0" stop-color="#18384d"/>
+            <stop offset="1" stop-color="#b18648"/>
+          </linearGradient>
+          <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="5"/>
+          </filter>
+        </defs>
+        <g class="lattice-lines">
+          <path id="l1" d="M60 70H700"/>
+          <path id="l2" d="M60 150H700"/>
+          <path id="l3" d="M60 230H700"/>
+          <path d="M150 50V250"/>
+          <path d="M310 50V250"/>
+          <path d="M470 50V250"/>
+          <path d="M630 50V250"/>
+        </g>
+        <g class="lattice-nodes">
+          <circle cx="150" cy="70" r="11"/>
+          <circle cx="310" cy="70" r="11"/>
+          <circle cx="470" cy="70" r="11"/>
+          <circle cx="630" cy="70" r="11"/>
+          <circle cx="150" cy="150" r="11"/>
+          <circle cx="310" cy="150" r="11"/>
+          <circle cx="470" cy="150" r="11"/>
+          <circle cx="630" cy="150" r="11"/>
+          <circle cx="150" cy="230" r="11"/>
+          <circle cx="310" cy="230" r="11"/>
+          <circle cx="470" cy="230" r="11"/>
+          <circle cx="630" cy="230" r="11"/>
+        </g>
+        <g class="lattice-packets">
+          <circle r="7">
+            <animateMotion dur="4.6s" repeatCount="indefinite">
+              <mpath href="#l1"/>
+            </animateMotion>
+          </circle>
+          <circle r="7">
+            <animateMotion dur="5.2s" begin="0.8s" repeatCount="indefinite">
+              <mpath href="#l2"/>
+            </animateMotion>
+          </circle>
+          <circle r="7">
+            <animateMotion dur="5.8s" begin="1.4s" repeatCount="indefinite">
+              <mpath href="#l3"/>
+            </animateMotion>
+          </circle>
+        </g>
+      </svg>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>© <span data-year></span> Harasees Kaur</span>
+    <a href="publications.html">Selected publications</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

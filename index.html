@@ -3,286 +3,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Harasees Kaur is a PhD scholar at IIT Ropar researching high-performance and distributed computing, with a focus on communication-efficient systems.">
-  <title>Harasees Kaur | HPC Researcher</title>
+  <meta name="description" content="Harasees Kaur is a PhD scholar at IIT Ropar researching communication-efficient high-performance and distributed computing systems.">
+  <title>Harasees Kaur | High-Performance Computing</title>
   <script>
     document.documentElement.classList.add("js-enabled");
   </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <canvas id="network-canvas" aria-hidden="true"></canvas>
+<body class="page page-home" data-page="home">
+  <div class="paper-grid" aria-hidden="true"></div>
 
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Harasees Kaur home">
-        <span class="brand-orbit"></span>
-        <span>HK</span>
-      </a>
+  <header class="masthead shell">
+    <a class="wordmark" href="index.html">
+      <span class="monogram" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M10 32h16M38 32h16M26 32l6-8 6 8-6 8-6-8Z"/>
+          <circle cx="10" cy="32" r="4"/>
+          <circle cx="54" cy="32" r="4"/>
+        </svg>
+      </span>
+      <span>Harasees Kaur</span>
+    </a>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="identity">
+      <span>PhD Scholar, Computer Science and Engineering</span>
+      <span>Indian Institute of Technology Ropar</span>
+    </div>
 
-      <a class="button button-quiet" href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">
-        View CV
-      </a>
-    </header>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">CV</a>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero section">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">PhD Scholar · IIT Ropar</p>
-          <h1>
-            I study how distributed systems
-            <span>communicate faster, scale cleaner, and think bigger.</span>
-          </h1>
-          <p class="hero-text">
-            I am Harasees Kaur, a second-year PhD researcher in Computer Science and Engineering,
-            working at the intersection of high-performance computing, distributed systems, and
-            communication-efficient design.
-          </p>
+  <main class="shell">
+    <section class="opening-grid">
+      <div class="opening-copy reveal">
+        <p class="folio">Research profile / 2026</p>
+        <h1>At scale, performance becomes a question of communication.</h1>
+        <p class="lede">
+          I study high-performance and distributed computing systems, with particular attention to
+          the communication costs that emerge when many machines must act as one.
+        </p>
+        <p class="sublede">
+          My present work examines MPI collective communication, synchronization, trace-driven
+          modeling, and scalability-aware design for large systems and distributed AI workloads.
+        </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#research">Explore research</a>
-            <a class="button button-quiet" href="mailto:harasees.24csz0001@iitrpr.ac.in">Email me</a>
-          </div>
+        <div class="text-links" aria-label="Key links">
+          <a href="research.html">Research program</a>
+          <a href="about.html">Academic profile</a>
+          <a href="mailto:harasees.24csz0001@iitrpr.ac.in">harasees.24csz0001@iitrpr.ac.in</a>
         </div>
+      </div>
 
-        <div class="hero-visual reveal">
-          <div class="signal-core">
-            <span class="ring ring-one"></span>
-            <span class="ring ring-two"></span>
-            <span class="ring ring-three"></span>
-            <span class="core-dot"></span>
-          </div>
+      <figure class="atlas reveal" aria-labelledby="atlas-caption">
+        <div class="figure-label">Communication atlas</div>
+        <svg viewBox="0 0 620 460" role="img" aria-label="Animated communication paths between distributed systems">
+          <defs>
+            <linearGradient id="routeGlow" x1="0" x2="1">
+              <stop offset="0" stop-color="#18384d"/>
+              <stop offset="0.5" stop-color="#1f6b8c"/>
+              <stop offset="1" stop-color="#b18648"/>
+            </linearGradient>
+            <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="5"/>
+            </filter>
+          </defs>
 
-          <article class="floating-card card-a">
-            <span>MPI</span>
-            <strong>Collective Communication</strong>
-          </article>
-          <article class="floating-card card-b">
-            <span>HPC</span>
-            <strong>Scalability-Aware Design</strong>
-          </article>
-          <article class="floating-card card-c">
-            <span>AI</span>
-            <strong>Distributed Workloads</strong>
-          </article>
-        </div>
-      </section>
+          <g class="mesh">
+            <path d="M66 92C154 86 188 138 250 160S390 194 454 130 542 78 564 92"/>
+            <path d="M58 286C142 286 172 238 244 244S370 288 438 324 528 340 566 316"/>
+            <path d="M120 390C190 344 214 322 282 318S406 316 486 248"/>
+            <path d="M176 72C208 126 220 174 244 244S278 356 282 318"/>
+            <path d="M454 130C448 196 458 258 438 324"/>
+          </g>
 
-      <section class="metrics-strip reveal" aria-label="Research highlights">
-        <article>
-          <strong>2024–Present</strong>
-          <span>PhD in CSE</span>
-        </article>
-        <article>
-          <strong>9.23</strong>
-          <span>PhD coursework CGPA</span>
-        </article>
-        <article>
-          <strong>3</strong>
-          <span>Research publications</span>
-        </article>
-        <article>
-          <strong>CS565</strong>
-          <span>HPC Lab teaching</span>
-        </article>
-      </section>
+          <g class="route-highlight">
+            <path id="route-a" d="M66 92C154 86 188 138 250 160S390 194 454 130 542 78 564 92"/>
+            <path id="route-b" d="M58 286C142 286 172 238 244 244S370 288 438 324 528 340 566 316"/>
+            <path id="route-c" d="M120 390C190 344 214 322 282 318S406 316 486 248"/>
+          </g>
 
-      <section id="about" class="about section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">About me</p>
-          <h2>Young researcher. Long horizon.</h2>
-        </div>
+          <g class="nodes">
+            <g transform="translate(66 92)">
+              <circle r="11"/>
+              <text x="-18" y="-22">A</text>
+            </g>
+            <g transform="translate(250 160)">
+              <circle r="11"/>
+              <text x="-20" y="-22">B</text>
+            </g>
+            <g transform="translate(454 130)">
+              <circle r="11"/>
+              <text x="-20" y="-22">C</text>
+            </g>
+            <g transform="translate(564 92)">
+              <circle r="11"/>
+              <text x="-18" y="-22">D</text>
+            </g>
+            <g transform="translate(58 286)">
+              <circle r="11"/>
+              <text x="-18" y="-22">E</text>
+            </g>
+            <g transform="translate(244 244)">
+              <circle r="11"/>
+              <text x="-20" y="-22">F</text>
+            </g>
+            <g transform="translate(438 324)">
+              <circle r="11"/>
+              <text x="-20" y="-22">G</text>
+            </g>
+            <g transform="translate(566 316)">
+              <circle r="11"/>
+              <text x="-18" y="-22">H</text>
+            </g>
+            <g transform="translate(120 390)">
+              <circle r="11"/>
+              <text x="-18" y="-22">I</text>
+            </g>
+            <g transform="translate(282 318)">
+              <circle r="11"/>
+              <text x="-20" y="-22">J</text>
+            </g>
+            <g transform="translate(486 248)">
+              <circle r="11"/>
+              <text x="-20" y="-22">K</text>
+            </g>
+          </g>
 
-        <div class="about-grid">
-          <figure class="portrait-frame reveal">
-            <img src="assets/profile.jpg" alt="Portrait of Harasees Kaur" loading="lazy" decoding="async">
-          </figure>
+          <g class="packets">
+            <circle r="6">
+              <animateMotion dur="5.8s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#route-a"/>
+              </animateMotion>
+            </circle>
+            <circle r="6">
+              <animateMotion dur="6.6s" begin="1.2s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#route-b"/>
+              </animateMotion>
+            </circle>
+            <circle r="6">
+              <animateMotion dur="5.2s" begin="0.7s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#route-c"/>
+              </animateMotion>
+            </circle>
+          </g>
 
-          <div class="about-copy reveal">
-            <p>
-              I am a PhD scholar at the Indian Institute of Technology Ropar, drawn to the hidden
-              cost of coordination inside modern computing systems. My work focuses on reducing
-              communication overhead across distributed environments so that large systems spend
-              less time waiting and more time doing meaningful work.
-            </p>
-            <p>
-              I am especially interested in MPI collective communication, synchronization,
-              communication performance analysis, trace-driven modeling, distributed AI, and
-              scalable parallel algorithms. I want my research to sit where rigor meets usefulness:
-              elegant enough for theory, concrete enough to improve real systems.
-            </p>
+          <g class="annotations">
+            <text x="58" y="432">latency</text>
+            <text x="264" y="432">synchronization</text>
+            <text x="468" y="432">collective</text>
+          </g>
+        </svg>
+        <figcaption id="atlas-caption">
+          In distributed systems, computation is only half the story; the path that information takes
+          often determines whether scale becomes capability or delay.
+        </figcaption>
+      </figure>
+    </section>
 
-            <div class="about-tags" aria-label="Research areas">
-              <span>High-Performance Computing</span>
-              <span>Distributed Systems</span>
-              <span>MPI Collectives</span>
-              <span>Trace-Driven Modeling</span>
-              <span>Parallel Algorithms</span>
-              <span>Distributed AI</span>
-            </div>
+    <section class="ledger reveal" aria-label="Research summary">
+      <article>
+        <span>Question</span>
+        <p>How can distributed systems reduce coordination cost without sacrificing scalability?</p>
+      </article>
+      <article>
+        <span>Method</span>
+        <p>Communication analysis, MPI collectives, performance modeling, and trace-driven simulation.</p>
+      </article>
+      <article>
+        <span>Horizon</span>
+        <p>A research and teaching career in systems that are faster, more principled, and easier to reason about.</p>
+      </article>
+    </section>
 
-            <div class="supervision">
-              <span>Primary Supervisor · Dr. Jagpreet Singh</span>
-              <span>Co-Supervisor · Dr. Balwinder Sodhi</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="research" class="research section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Research map</p>
-          <h2>Reducing the drag between machines.</h2>
-        </div>
-
-        <div class="research-grid">
-          <article class="research-card reveal">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 7.5h14M5 16.5h14M8 4.5v15M16 4.5v15"/>
-              </svg>
-            </div>
-            <h3>Communication-centric HPC</h3>
-            <p>
-              Designing systems around the cost of data movement, synchronization, and collective
-              communication rather than treating them as afterthoughts.
-            </p>
-          </article>
-
-          <article class="research-card reveal">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="6" cy="12" r="2.5"/>
-                <circle cx="18" cy="6" r="2.5"/>
-                <circle cx="18" cy="18" r="2.5"/>
-                <path d="M8.2 10.8 15.8 7.2M8.2 13.2l7.6 3.6"/>
-              </svg>
-            </div>
-            <h3>Distributed coordination</h3>
-            <p>
-              Studying how nodes exchange information, where bottlenecks emerge, and how to
-              orchestrate work with less waiting across large systems.
-            </p>
-          </article>
-
-          <article class="research-card reveal">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 18 9 13l4 3 7-10"/>
-                <path d="M16 6h4v4"/>
-              </svg>
-            </div>
-            <h3>Performance modeling</h3>
-            <p>
-              Using trace-driven simulation and scalability-aware analysis to understand system
-              behavior before costly inefficiencies become architecture.
-            </p>
-          </article>
-
-          <article class="research-card reveal">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 4v16M4 12h16"/>
-                <circle cx="12" cy="12" r="8"/>
-              </svg>
-            </div>
-            <h3>Future systems</h3>
-            <p>
-              Extending these ideas toward heterogeneous platforms, distributed AI, and teaching
-              the next generation to reason about systems at scale.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="publications" class="publications section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Selected publications</p>
-          <h2>Ideas already leaving the lab.</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2025</span>
-            <div>
-              <h3>Analyzing Communication Performance From Testbeds to HPC Systems: A Lab Course</h3>
-              <p>EduHiPC 2025 · Hyderabad, India</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2025</span>
-            <div>
-              <h3>Machine Learning Based Hybrid Approach for Schizophrenia Diagnosis Using Non-Stationary EEG Signals</h3>
-              <p>International Journal of Biomedical Engineering and Technology</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span class="timeline-year">2024</span>
-            <div>
-              <h3>A Novel Approach to EEG-Based Schizophrenia Detection Using VMD and Machine Learning Algorithms</h3>
-              <p>ICDSA 2024 · MNIT Jaipur</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="teaching" class="teaching section">
-        <div class="teaching-card reveal">
+    <section class="register-grid">
+      <article class="register-entry reveal">
+        <p class="folio">Current appointment</p>
+        <h2>PhD Scholar</h2>
+        <p>Department of Computer Science and Engineering, IIT Ropar</p>
+        <dl>
           <div>
-            <p class="eyebrow">Teaching</p>
-            <h2>Learning systems deeply enough to teach them clearly.</h2>
+            <dt>Since</dt>
+            <dd>2024</dd>
           </div>
-          <div class="teaching-details">
-            <strong>Teaching Assistant — HPC Lab Course (CS565)</strong>
-            <span>January 2026 – Present · IIT Ropar</span>
-            <ul>
-              <li>Supporting lab design and delivery for high-performance computing.</li>
-              <li>Guiding MPI programming, collective communication, and cluster experiments.</li>
-              <li>Helping students reason about scalability, performance, and parallel execution.</li>
-            </ul>
+          <div>
+            <dt>Coursework CGPA</dt>
+            <dd>9.23</dd>
           </div>
-        </div>
-      </section>
+        </dl>
+      </article>
 
-      <section id="contact" class="contact section reveal">
-        <div class="contact-panel">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s talk about systems that deserve to scale.</h2>
-          <p>
-            Department of Computer Science and Engineering<br>
-            Indian Institute of Technology Ropar
-          </p>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:harasees.24csz0001@iitrpr.ac.in">
-              harasees.24csz0001@iitrpr.ac.in
-            </a>
-            <a class="button button-quiet" href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">
-              Download CV
-            </a>
+      <article class="register-entry reveal">
+        <p class="folio">Selected activity</p>
+        <h2>HPC Lab Course</h2>
+        <p>Teaching Assistant, CS565</p>
+        <dl>
+          <div>
+            <dt>Role</dt>
+            <dd>Teaching</dd>
           </div>
-        </div>
-      </section>
-    </main>
+          <div>
+            <dt>Term</dt>
+            <dd>Jan 2026 – Present</dd>
+          </div>
+        </dl>
+      </article>
 
-    <footer class="site-footer">
-      <span>© <span id="year"></span> Harasees Kaur</span>
-      <span>Built for clarity, scale, and the long game.</span>
-    </footer>
-  </div>
+      <article class="register-entry reveal">
+        <p class="folio">Publication record</p>
+        <h2>3 works</h2>
+        <p>Across HPC education, biomedical AI, and signal-based diagnosis.</p>
+        <dl>
+          <div>
+            <dt>Recent</dt>
+            <dd>EduHiPC 2025</dd>
+          </div>
+          <div>
+            <dt>Details</dt>
+            <dd><a href="publications.html">View bibliography</a></dd>
+          </div>
+        </dl>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>© <span data-year></span> Harasees Kaur</span>
+    <span>High-Performance Computing · Distributed Systems · IIT Ropar</span>
+  </footer>
 
   <script src="script.js"></script>
 </body>
