@@ -24,6 +24,8 @@ const observer = new IntersectionObserver(
   { threshold: 0.14 }
 );
 
-document.querySelectorAll(".reveal").forEach((element) => {
+document.querySelectorAll(".reveal").forEach((element, index) => {
+  const delay = Math.min(index * 45, 360);
+  element.style.setProperty("--reveal-delay", `${delay}ms`);
   observer.observe(element);
 });
