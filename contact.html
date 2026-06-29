@@ -19,35 +19,30 @@
 
   <header class="masthead shell">
     <a class="wordmark" href="index.html">
-      <span class="monogram" aria-hidden="true">
-        <svg viewBox="0 0 64 64">
-          <path d="M10 32h16M38 32h16M26 32l6-8 6 8-6 8-6-8Z"/>
-          <circle cx="10" cy="32" r="4"/>
-          <circle cx="54" cy="32" r="4"/>
-        </svg>
-      </span>
       <span>Harasees Kaur</span>
     </a>
 
-    <div class="identity">
-      <span>PhD Scholar, Computer Science and Engineering</span>
-      <span>Indian Institute of Technology Ropar</span>
-    </div>
+    <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>
+      <span class="nav-toggle-bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span class="visually-hidden">Menu</span>
+    </button>
 
-    <nav class="primary-nav" aria-label="Primary navigation">
+    <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
       <a href="contact.html">Contact</a>
-      <a class="nav-cv" href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">CV</a>
     </nav>
   </header>
 
   <main class="shell page-main">
     <section class="page-intro reveal">
-      <p class="folio">05 / Contact</p>
       <h1>Academic correspondence, research conversations, and teaching inquiries.</h1>
     </section>
 
@@ -65,36 +60,31 @@
       </a>
     </section>
 
-    <section class="contact-grid">
-      <article class="contact-card reveal">
-        <span>Academic base</span>
-        <h2>IIT Ropar</h2>
-        <p>Department of Computer Science and Engineering</p>
-        <p>Indian Institute of Technology Ropar</p>
-      </article>
-
-      <article class="contact-card reveal">
-        <span>Research topics</span>
-        <h2>Systems research</h2>
-        <p>High-performance computing, distributed systems, MPI collectives, trace-driven modeling, and distributed AI workloads.</p>
-      </article>
-
-      <article class="contact-card reveal">
-        <span>Teaching</span>
-        <h2>CS565 HPC Lab</h2>
-        <p>Teaching assistant queries related to high-performance computing lab work and performance evaluation.</p>
-      </article>
-    </section>
-
     <section class="contact-panel reveal" aria-label="Quick links">
       <div>
         <p class="folio">Quick links</p>
-        <h2>Profile materials</h2>
+        <h2>Academic links</h2>
       </div>
-      <div class="contact-actions">
-        <a href="research.html">Research program</a>
-        <a href="publications.html">Publications</a>
-        <a href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">Download CV</a>
+      <div class="contact-actions profile-actions">
+        <a href="https://github.com/haraseesKaur12" target="_blank" rel="noreferrer">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5A12 12 0 0 0 8.21 23.9c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/harasees-kaur-b7a363350/" target="_blank" rel="noreferrer">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=soQdKhoAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m22 10-10-5-10 5 10 5 10-5Z"/>
+            <path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
+          </svg>
+          <span>Google Scholar</span>
+        </a>
       </div>
     </section>
   </main>
@@ -107,17 +97,43 @@
         <span>High-performance &amp; distributed computing systems</span>
       </div>
     </div>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
+    <nav class="footer-nav" aria-label="Academic links">
       <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <div class="footer-actions">
-      <a class="footer-contact" href="mailto:harasees.24csz0001@iitrpr.ac.in">Email</a>
-      <a href="IIT_Ropar_CV_Template.pdf" target="_blank" rel="noreferrer">CV</a>
+    <div class="footer-actions" aria-label="Academic contact links">
+      <a class="social-link" href="https://github.com/haraseesKaur12" aria-label="GitHub" title="GitHub" target="_blank" rel="noreferrer">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5A12 12 0 0 0 8.21 23.9c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/>
+        </svg>
+      </a>
+      <a class="social-link" href="https://www.linkedin.com/in/harasees-kaur-b7a363350/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noreferrer">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/>
+        </svg>
+      </a>
+      <a class="social-link" href="https://scholar.google.com/citations?user=soQdKhoAAAAJ&hl=en&oi=ao" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m22 10-10-5-10 5 10 5 10-5Z"/>
+          <path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
+        </svg>
+      </a>
+      <a class="social-link" href="mailto:harasees.24csz0001@iitrpr.ac.in" aria-label="Email" title="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>
+          <path d="m22 7-10 6L2 7"/>
+        </svg>
+      </a>
+      <a class="social-link" href="IIT_Ropar_CV_Template.pdf" aria-label="CV PDF" title="CV PDF" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+          <path d="M14 2v6h6"/>
+          <path d="M9 15h6M9 18h4"/>
+        </svg>
+      </a>
     </div>
     <p class="footer-note">&copy; <span data-year></span> Harasees Kaur / IIT Ropar</p>
   </footer>
